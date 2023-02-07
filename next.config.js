@@ -5,6 +5,9 @@ const nextConfig = {
     // Required:
     appDir: true,
   },
+  images: {
+    domains: ['tailwindui.com', 'robohash.org', 'upload.wikimedia.org']
+  },
 };
 
 module.exports = nextConfig;

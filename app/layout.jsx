@@ -4,8 +4,8 @@ import LoginLayout from './LoginLayout';
 
 export default function layout({ children }) {
   console.log('Hola mundo')
-  if(true) {
-    return <LoginLayout/>;
+  if (true) {
+    return <LoginLayout />;
   }
   return <AdminLayout children={children} />;
 }
