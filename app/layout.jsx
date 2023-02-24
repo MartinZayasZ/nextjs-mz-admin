@@ -1,12 +1,17 @@
-/* eslint-disable @next/next/no-head-element */
 import '@/styles/globals.css';
+import { useRouter } from 'next/router'
 
-export default function RootLayout({ children }) {
-  console.log("Hola")
-  return (
-    <html>
-      <head></head>
-      <body>{children}</body>
-    </html>
-  );
+import AdminLayout from './layouts/AdminLayout';
+import LoginLayout from './layouts/LoginLayout';
+
+
+
+
+export default function layout({ children}) {
+  
+
+  if (true) {
+    return <LoginLayout />;
+  }
+  return <AdminLayout children={children} />;
 }

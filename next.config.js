@@ -8,6 +8,9 @@ const nextConfig = {
   images: {
     domains: ['tailwindui.com', 'robohash.org', 'upload.wikimedia.org']
   },
+  router: {
+    ignoreRoutes: ['/layouts']
+  }
 };
 
 module.exports = nextConfig;
